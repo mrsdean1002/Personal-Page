@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sista In Transition</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Give+You+Glory" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+   
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <h1>Sista In Transition</h1>
+      
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="selected">Contact</a></li>
+          <li><a href="http://twitter.com/mrsdean1002"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a></li>
+          <li><a href="http://facebook.com/mrsdean1002"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a></li>
+        </ul>
+      </nav>
+      <form action="index.html" method="post"> 
+          
+          <h2>Subscribe to Sista In Transition</h2>
+          
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name">
+
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email">
+          
+          <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female" checked> Female
+        <input type="radio" name="gender" value="other" checked> Other
+        
+          <button onclick="myFunction()">Subscribe</button>
+
+<script>
+function myFunction() {
+    alert("Thank You For Subscribing!");
+}
+</script>
+        
+        </form>
+    </header>
+    <div id="wrapper">
+      <section>
+      </section>
+      <footer>
+        <p>&copy; 2017 Sista In Transition.</p>
+      </footer>
+    </div>
+  </body>
+  
+</html>
