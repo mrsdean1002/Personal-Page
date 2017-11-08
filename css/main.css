@@ -138,24 +138,28 @@ footer {
 
 .slides li {
   float: left;
-  width: 45%;
+  width: 40%;
   margin: 2.5%;
+  border: 7px solid #210602;
   background-color: #210602;
   color: #b8860b;
 }
 
 .slides li a p {
   margin: 0;
-  padding: 5%;
-  font-size: 2em;
+  padding: 2%;
+  font-size: 27px;
   color: goldenrod;
 }
+
 
 /*PAGE: ABOUT*/
 
 .profile-photo {
   max-width: 100%;
   margin: 0 auto 1em;
+  border: 7px solid #210602;
+  background-color: #210602;
   display: block;
 }
 
@@ -166,5 +170,6 @@ form {
   color:#b8860b;
   font-size: 20px;
   font-weight: 600;
-  background-color: darkolivegreen;
+  border: 15px solid #210602;
+  background-color: darkkhaki;
 }
