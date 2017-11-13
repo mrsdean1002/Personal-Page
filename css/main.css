@@ -1,32 +1,37 @@
-/*GENERAL*/
+/********************
+GENERAL
+********************/
 
 body {
   font-family: 'Give You Glory', sans-serif;
 }
 
 #wrapper {
-  max-width: 940px;
+  max-width: 940px;  /**** want width to be no larger than 940pixels across ****/
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 5%;     /**** first value reps top and bottom, second value reps left and right****/
 }
 
 a {
   text-decoration: none;
 }
-
+/*    max width tells images to fill the width of their parent container*/
 img {
   max-width: 100%; 
 }
+
 
 h3 {
   text-align: center;
   margin: 0 0 1em 0;
 }
 
-/*HEADING*/
+/********************
+HEADING
+********************/
 
 header {
- 
+/*  float: left;*/
   margin: 0px 0 25px 0;
   padding: 5px 0 0 0;
   width: 100%;
@@ -55,11 +60,13 @@ h1 {
 
 
 
-/*NAVIGATION*/
+/********************
+NAVIGATION
+********************/
 
 nav ul {
  list-style: none;
-  margin: 8px 0px 5px;
+  margin: 8px 0px 10px;
   padding: 0;
   font-size: 20px;
 }
@@ -71,12 +78,14 @@ nav li {
 
 nav a {
   font-weight: 800;
-  padding: 15px 10px;
+  padding: 15px 20px;
 }
 
 
 
-/*COLOR*/
+/********************
+COLOR
+********************/
 
 /* site body */
 body {
@@ -118,7 +127,9 @@ nav a.selected, nav a:hover {
 }
 
 
-/*FOOTER*/
+/********************
+FOOTER
+********************/
 
 footer {
   font-size: 18px;
@@ -128,15 +139,17 @@ footer {
 }
 
 
-/*PAGE: MAIN/GALLERY*/
+/********************
+PAGE: MAIN/GALLERY
+********************/
 
-.slides {
+.gallery {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.slides li {
+.gallery li {
   float: left;
   width: 40%;
   margin: 2.5%;
@@ -145,7 +158,12 @@ footer {
   color: #b8860b;
 }
 
-.slides li a p {
+.gallery li a {
+  
+  
+}
+
+.gallery li a p {
   margin: 0;
   padding: 2%;
   font-size: 27px;
@@ -153,7 +171,9 @@ footer {
 }
 
 
-/*PAGE: ABOUT*/
+/********************
+PAGE: ABOUT
+********************/
 
 .profile-photo {
   max-width: 97%;
@@ -163,8 +183,20 @@ footer {
   display: block;
 }
 
+.container {
+  max-width: 100%; 
+}
 
-/*PAGE: CONTACT*/
+/*
+.h1 {
+  max-width: 100%; 
+}
+*/
+
+
+/********************
+PAGE: CONTACT
+********************/
 
 form {
   color:#b8860b;
@@ -173,3 +205,7 @@ form {
   border: 15px solid #210602;
   background-color: darkkhaki;
 }
+
+
+
+
