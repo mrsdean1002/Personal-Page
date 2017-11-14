@@ -9,8 +9,9 @@ body {
 #wrapper {
   max-width: 940px;  /**** want width to be no larger than 940pixels across ****/
   margin: 0 auto;
-  padding: 0 5%;     /**** first value reps top and bottom, second value reps left and right****/
+  padding: 0 5%;     /*** first value reps top and bottom, second value reps left and right****/
 }
+
 
 a {
   text-decoration: none;
@@ -26,13 +27,14 @@ h3 {
   margin: 0 0 1em 0;
 }
 
+
 /********************
 HEADING
 ********************/
 
 header {
 /*  float: left;*/
-  margin: 0px 0 25px 0;
+  margin: 0px 0px 25px 0;
   padding: 5px 0 0 0;
   width: 100%;
 }
@@ -198,13 +200,22 @@ PAGE: ABOUT
 PAGE: CONTACT
 ********************/
 
-form {
-  color:#b8860b;
-  font-size: 20px;
-  font-weight: 600;
-  border: 15px solid #210602;
-  background-color: darkkhaki;
+#form {
+  max-width: 40%;
+  margin: auto;
 }
+
+form {
+  color:darkgoldenrod;
+  font-size: 19px;
+  font-weight: 600;
+/*  border: 15px solid #210602;*/
+  display: block; 
+/*  background-color: #b8860b;*/
+}
+
+
+
 
 
 
