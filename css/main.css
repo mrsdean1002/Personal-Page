@@ -33,7 +33,6 @@ HEADING
 ********************/
 
 header {
-/*  float: left;*/
   margin: 0px 0px 25px 0;
   padding: 5px 0 0 0;
   width: 100%;
@@ -201,7 +200,7 @@ PAGE: CONTACT
 ********************/
 
 #form {
-  max-width: 40%;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -209,9 +208,8 @@ form {
   color:darkgoldenrod;
   font-size: 19px;
   font-weight: 600;
-/*  border: 15px solid #210602;*/
-  display: block; 
-/*  background-color: #b8860b;*/
+  border: 15px solid #210602;
+  display: inline-block;
 }
 
 
