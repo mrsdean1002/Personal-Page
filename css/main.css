@@ -22,10 +22,12 @@ img {
 }
 
 
-h3 {
+h3  {
   text-align: center;
+  font-size: 21px; 
   margin: 0 0 1em 0;
 }
+
 
 
 /********************
@@ -187,12 +189,6 @@ PAGE: ABOUT
 .container {
   max-width: 100%; 
 }
-
-/*
-.h1 {
-  max-width: 100%; 
-}
-*/
 
 
 /********************
