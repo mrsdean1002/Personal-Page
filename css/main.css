@@ -40,10 +40,10 @@ header {
 }
 
 .social-icon {
-  float: right;
+  float : left;
   width: 20px;
   height: 20px;
-  margin: 0 5px; 
+  margin: 0 10px; 
 }
 
 /*  sista in transition logo  */
