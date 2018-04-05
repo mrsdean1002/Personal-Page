@@ -3,6 +3,11 @@
   "version": "",
   "description": "My CodeLouisville project consisted of me creating a personal page that will eventually be turned into my blog page.\r This project has been such a great experience in building my confidence to create future pages for individuals and businesses. \r Here is a link to my page: Enjoy [https://mrsdean1002.github.io/Project-Reloaded/]",
   "dependencies": {
-    "express": "^4.16.3"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.12"
+  },
+  "scripts": {
+    "start": "nodemon src/server.js"
   }
 }
