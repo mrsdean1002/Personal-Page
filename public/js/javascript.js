@@ -44,11 +44,27 @@ $(document).ready(function(){
    ];
 
   console.log("Test 1")
+  
 
-  $('#quoteButton').click(function(evt){
-    var randomNumber = 9; // todo: make this random
-    var selectedQuote = quoteSource[randomNumber];
-    console.log(selectedQuote)
+  /$('#quoteButton').click(function(evt){
+    var quote = $('#quoteContainer p').text();
+    var quoteSeeker = $('#quoteSeeker').text();
+
+    evt.preventDefault();
+
+    var sourceLength = quoteSource.length;
+    var randomNumber= Math.floor(Math.random()*sourceLength);
+    for(let i=0;i<=sourceLength;i+=9){
+      var newQuoteText = quoteSource[randomNumber].quote;
+      var newQuoteSeeker = quoteSource[randomNumber].name; 
+      console.log(newQuoteText,newQuoteSeeker);
+    }
+  
+
+  // $('#quoteButton').click(function(evt){
+  //   var randomNumber = 9; // todo: make this random
+  //   var selectedQuote = quoteSource[randomNumber];
+  //   console.log(selectedQuote)
 
     // To Do
     // 1. Make it select a random quote
