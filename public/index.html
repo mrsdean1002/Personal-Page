@@ -31,23 +31,39 @@
     </p> -->
     
     <h2>Motivational Quote</h2>
-    <div class="center">
+    <div id="quoteContainer">
+    </div>
+
+    <div id="buttonContainer">
+      <a href="#" id="quoteButton">New Quote</a>
+    </div>
+    </body>
+    <!-- <div class="center">
     <div class="quote"></div>
     </div>
         <!-- Quote will display here -->
       
-      <button type="button" class="button" onclick="getQuotes()">New Quote</button>
+      <!-- <button type="button" class="button" onclick="getQuotes()">New Quote</button>
       <button id="update"> Update </button>
   
       
       
-    <script id="list-template" type="text/x-handlebars-template">
-      <ul class="list-group">
-        <p>{{}}</p>
-      </ul>
-    </script>
+      <script id="list-template" type="text/x-handlebars-template">
+        <ul class="list-group">
+          {{#each files}}
+          <li class="list-group-item">
+            <strong>{{title}}</strong> - {{description}}
+            <span class="pull-right">
+              <button type="button" class="btn btn-xs btn-default" onclick="handleEditFileClick('{{_id}}')">Edit</button>
+              <button type="button" class="btn btn-xs btn-danger" onclick="handleDeleteFileClick('{{_id}}')">Del</button>
+            </span>
+          </li>
+          {{/each}}
+        </ul>
+      </script> --> 
       <footer>
-          <script src="js/app.js">
+          <script src="js/app.js"> </script>
+          <script src="js/javascript.js"> </script>
           </script>
       <p>&copy; 2017 Mrsdean1002</p>
       </footer>

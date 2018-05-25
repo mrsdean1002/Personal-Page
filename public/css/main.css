@@ -60,6 +60,16 @@ h1 {
   font-weight: bold;
   line-height: 0.8em;
 }
+h2 {
+  font-family: 'Give You Glory', sans-serif;
+  font-weight: bold;
+}
+
+#getQuotes{
+	font-style: italic;
+	font-weight: 600;
+	text-align: center;
+}
 
 
 
@@ -110,7 +120,7 @@ nav {
 }
 
 /* logo text */
-h1, h2 {
+h1 {
   color: darkgoldenrod;
 }
 
@@ -161,10 +171,10 @@ PAGE: MAIN/GALLERY
   color: #b8860b;
 }
 
-.gallery li a {
+/* .gallery li a {
   
   
-}
+} */
 
 .gallery li a p {
   margin: 0;
@@ -214,3 +224,51 @@ form {
 
 
 
+
+/* INDEX */
+
+#container{
+	width:800px;
+	margin:50px auto;
+	padding: 20px;
+	width:50%;
+}
+
+#quoteContainer{
+	width:75%;
+	background: #fff;
+	padding:10px;
+	margin:30px auto;
+	text-align: center;
+  height:70px;
+}
+#buttonContainer{
+	width: 100%;
+	text-align: center;
+}
+#quoteButton{
+	width:200px;
+	margin-top: 10px;
+	border:2px solid black;
+	color:darkred;
+	font-family: inherit;
+	font-weight: bold;
+	padding:5px;
+	text-decoration: none;
+	text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
+#quoteButton:hover{
+	cursor:pointer;
+	background:darkred;
+	color: #210602;	
+}
+#quoteButton:active{
+	cursor: pointer;
+}
+#quoteButton{
+	display: inline-block;
+}
