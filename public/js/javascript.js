@@ -58,5 +58,8 @@ $(document).ready(function(){
     var quoteText = quotes[randomNumber].quote;
     var quotePerson = quotes[randomNumber].name; 
     $('#quoteContainer').html(quoteText + " -" + quotePerson);
+
+    console.log(quoteText, quotePerson)
   });
 });
+
