@@ -1,6 +1,10 @@
+// const quoteSeeker = document.getElementById('quoteSeeker');
+// const quoteButton = document.getElementById('quoteButton');
+// const myTextInput = document.getElementById('myTextInput');
+
 $(document).ready(function(){
 
-   var quoteSource = [
+   var quotes = [
    {
    quote: "I'm not in the best shape, but I want to prove to myself I can do something that seems insurmountable and inspire others by showing them no matter where they are in their fitness goals, they can do it, too.", 
    name: "Ruben Studdard"
@@ -46,34 +50,13 @@ $(document).ready(function(){
   console.log("Test 1")
   
 
-  /$('#quoteButton').click(function(evt){
-    var quote = $('#quoteContainer p').text();
-    var quoteSeeker = $('#quoteSeeker').text();
-
+  $('#quoteButton').click(function(evt){
     evt.preventDefault();
-
-    var sourceLength = quoteSource.length;
-    var randomNumber= Math.floor(Math.random()*sourceLength);
-    for(let i=0;i<=sourceLength;i+=9){
-      var newQuoteText = quoteSource[randomNumber].quote;
-      var newQuoteSeeker = quoteSource[randomNumber].name; 
-      console.log(newQuoteText,newQuoteSeeker);
-    }
-  
-
-  // $('#quoteButton').click(function(evt){
-  //   var randomNumber = 9; // todo: make this random
-  //   var selectedQuote = quoteSource[randomNumber];
-  //   console.log(selectedQuote)
-
-    // To Do
-    // 1. Make it select a random quote
-    //    Notes: 
-    //      - It must be no bigger than the length of the array
-    //      - Remember the array starts at 0
-    // 2. Add the quote to the div $("#theIdOfYourDiv").html(something goes here)
-
-
     
+    var numberOfQuotes = quotes.length - 1;
+    var randomNumber= Math.floor(Math.random()*numberOfQuotes);
+    var quoteText = quotes[randomNumber].quote;
+    var quotePerson = quotes[randomNumber].name; 
+    $('#quoteContainer').html(quoteText + " -" + quotePerson);
   });
 });
