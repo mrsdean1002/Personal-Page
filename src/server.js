@@ -14,7 +14,6 @@ app.use(bodyParser.json());
 app.use(express.static(publicPath));
 app.use('/api', router);
 
-
   //starts server
   app.listen(config.port, function() {
     console.log(`${config.appName} is listening on port ${config.port}`);

@@ -1,7 +1,3 @@
-// const quoteSeeker = document.getElementById('quoteSeeker');
-// const quoteButton = document.getElementById('quoteButton');
-// const myTextInput = document.getElementById('myTextInput');
-
 $(document).ready(function(){
 
    var quotes = [
@@ -53,7 +49,7 @@ $(document).ready(function(){
   $('#quoteButton').click(function(evt){
     evt.preventDefault();
     
-    var numberOfQuotes = quotes.length - 1;
+    var numberOfQuotes = quotes.length; //should the -1 go after quotes.length, ex: quotes.length -1, or stay like it is
     var randomNumber= Math.floor(Math.random()*numberOfQuotes);
     var quoteText = quotes[randomNumber].quote;
     var quotePerson = quotes[randomNumber].name; 
